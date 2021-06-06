@@ -7,8 +7,17 @@
 <body>
     <!--a.ページ本体-->
     <div id="app1">
+        <h2>1.カウンターの作成</h2>
         <p>Counter:{{counter}}</p>
         <button v-on:Click="stop()">{{StopButtonText}}</button>
+    </div>
+
+    <div id="app2">
+        <h2>2.要素の属性を束縛（バインディング）</h2>
+        <span v-bind:title="message">
+            Hover your mouse over me for a few seconds to see my dynamically bound
+            title!
+        </span>
     </div>
     <!--Vue本体とtest.jsの読み込み。最後に-->
     <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js">
