@@ -36,6 +36,13 @@
         <p>{{message}}</p>
         <input v-model="message" />
     </div>
+
+    <div id="app5">
+        <h2>5.条件分岐とループ1</h2>
+        <span v-if="seen">seenがtrueならこの文が見えているはず</span>
+        <p>{{seen}}</p>
+        <button v-on:Click="change()">CHANGE</button>
+    </div>
     <!--Vue本体とtest.jsの読み込み。最後に-->
     <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js">
     </script>
