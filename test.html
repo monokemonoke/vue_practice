@@ -43,6 +43,17 @@
         <p>{{seen}}</p>
         <button v-on:Click="change()">CHANGE</button>
     </div>
+
+    <div id="app6">
+        <h2>6.条件分岐とループ2</h2>
+        <ol>
+            <li v-for="value in values">
+                {{value.text}}
+            </li>
+        </ol>
+        <input v-model="message" />
+        <button v-on:Click="add()">ADD</button>
+    </div>
     <!--Vue本体とtest.jsの読み込み。最後に-->
     <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js">
     </script>
