@@ -55,8 +55,11 @@
                 {{value.text}}
             </li>
         </ol>
-        <input v-model="message" />
-        <button v-on:Click="add()">ADD</button>
+        <div class="input-group mb-3">
+            <input v-model="message" type="text" class="form-control" >
+              <button v-on:Click="add()" class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+        </div>
+        <!-- <button v-on:Click="add()"class="btn btn-outline-secondary">ADD</button> -->
     </div>
     <!--Vue本体とtest.jsの読み込み。最後に-->
     <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js">
