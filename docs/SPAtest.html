@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Vueの練習 SPA的なアプリ</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div id="app">
+        <p>{{message}}</p>
+        <!-- <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <h2>ToDoアプリ的なもの</h2>
+        </nav> -->
+        <!-- <div  v-for="TODO in TODOs" class="card" style="width: 18rem;">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
+            <div class="card-body">
+            <h5 class="card-title">{{TODO}}</h5>
+            <p class="card-text">{{TODO.date}}</p>
+            <p class="card-text">{{TODO.memo}}</p>
+            </div>
+        </div> -->
+    </div>
+    <!-- Vue本体とSPAtest.jsの読み込み -->
+    <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js">
+    </script>
+    <!-- <script src="./lib/SPAtest.js"></script> -->
+    <script src="./lib/hello.js"></script>
+</body>
+</html>

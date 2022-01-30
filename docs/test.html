@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Vueの練習 Vue公式ドキュメント</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div id="title">
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <h1><a href="https://v3.ja.vuejs.org/guide/introduction.html#%E5%AE%A3%E8%A8%80%E7%9A%84%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%99%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%99">
+                Vue.js Docs</a>を試してみた</h1>
+        </nav>
+    </div>
+    <!--a.ページ本体-->
+    <div id="app1">
+        <h2>1.カウンターの作成</h2>
+        <p>Counter:{{counter}}</p>
+        <button v-on:Click="stop()">{{StopButtonText}}</button>
+    </div>
+
+    <div id="app2">
+        <h2>2.要素の属性を束縛（バインディング）</h2>
+        <span v-bind:title="message">
+            Hover your mouse over me for a few seconds to see my dynamically bound
+            title!
+        </span>
+    </div>
+
+    <div id="app3">
+        <h2>3.ユーザー入力の制御1</h2>
+        <p>{{message1}}</p>
+        <p>{{message2}}</p>
+        <button v-on:Click="MakeReverse()">Reverse</button>
+    </div>
+
+    <div id="app4">
+        <h2>4.ユーザー入力の制御2</h2>
+        <p>{{message}}</p>
+        <input v-model="message" />
+    </div>
+
+    <div id="app5">
+        <h2>5.条件分岐とループ1</h2>
+        <span v-if="seen">seenがtrueならこの文が見えているはず</span>
+        <p>{{seen}}</p>
+        <button v-on:Click="change()">CHANGE</button>
+    </div>
+
+    <div id="app6">
+        <h2>6.条件分岐とループ2</h2>
+        <ol>
+            <li v-for="value in values">
+                {{value.text}}
+            </li>
+        </ol>
+        <div class="input-group mb-3">
+            <input v-model="message" type="text" class="form-control" >
+              <button v-on:Click="add()" class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+        </div>
+        <!-- <button v-on:Click="add()"class="btn btn-outline-secondary">ADD</button> -->
+    </div>
+    <!--Vue本体とtest.jsの読み込み。最後に-->
+    <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js">
+    </script>
+    <script src="./lib/test.js"></script>
+</body>
+</html>
